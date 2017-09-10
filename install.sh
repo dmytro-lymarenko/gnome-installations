@@ -18,4 +18,4 @@ echo -e "\e[32mInstall programs\e[0m"
 install_deb "Chrome" "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
 
 # Atom
-install_deb "Atom" "atom.deb https://atom.io/download/deb"
+install_deb "Atom" "https://atom.io/download/deb"
