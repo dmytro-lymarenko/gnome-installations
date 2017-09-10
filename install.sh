@@ -1,18 +1,30 @@
 # Utils
 
+function echo_green {
+	echo -e "\e[32m$1\e[0m"
+}
+
 function install_deb {
- 	echo -e "\e[32mInstall $1\e[0m"
-	rm "app.deb"
-	wget -O "app.deb" $2
-	sudo dpkg -i "app.deb"
+	file_name = "app.deb"
+
+	echo_green "Install $1"
+
+	if [ -f $file_name ]
+	then
+		rm $file_name
+	fi
+	wget -O $file_name $2
+	sudo dpkg -i $file_name
 	sudo apt install -f -y
+
+	rm $file_name
 }
 
 ################################################################################
 # INSTALL PROGRAMS                                                             #
 ################################################################################
 
-echo -e "\e[32mInstall programs\e[0m"
+echo_green "Install programs"
 
 # Chrome
 install_deb "Chrome" "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
