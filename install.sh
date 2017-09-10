@@ -5,7 +5,7 @@ function echo_green {
 }
 
 function install_deb {
-	file_name = "app.deb"
+	file_name="app.deb"
 
 	echo_green "Install $1"
 
