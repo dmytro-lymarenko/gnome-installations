@@ -43,7 +43,7 @@ function install_from_tar_xz {
 
 	tar xvfJ $file_name --directory "$archive_directory/$3" --strip-components=1
 
-	cp -R "$archive_directory/$3" "/opt/$3"
+	sudo cp -R "$archive_directory/$3" "/opt/$3"
 
 	rm $file_name
 	rm -rf $archive_directory
