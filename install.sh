@@ -22,3 +22,6 @@ install_deb "Atom" "https://atom.io/download/deb"
 
 # Slack
 install_deb "Slack" "https://downloads.slack-edge.com/linux_releases/slack-desktop-2.7.1-amd64.deb"
+
+# Skype
+install_deb "Skype" "https://repo.skype.com/latest/skypeforlinux-64.deb"
