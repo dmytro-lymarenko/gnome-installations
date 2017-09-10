@@ -18,6 +18,6 @@ echo -e "\e[32mInstall Atom\e[0m"
 
 rm atom.deb
 wget -O atom.deb https://atom.io/download/deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo dpkg -i atom.deb
 sudo apt install -f -y
 rm atom.deb
