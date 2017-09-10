@@ -19,3 +19,6 @@ install_deb "Chrome" "https://dl.google.com/linux/direct/google-chrome-stable_cu
 
 # Atom
 install_deb "Atom" "https://atom.io/download/deb"
+
+# Slack
+install_deb "Slack" "https://downloads.slack-edge.com/linux_releases/slack-desktop-2.7.1-amd64.deb"
