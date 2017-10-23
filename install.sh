@@ -61,6 +61,26 @@ install_deb "Chrome" "https://dl.google.com/linux/direct/google-chrome-stable_cu
 # Atom
 install_deb "Atom" "https://atom.io/download/deb"
 
+# Atom packages
+apm install\
+	atom-beautify\
+	atom-typescript\
+	busy-signal\
+	color-picker\
+	docblockr\
+	emmet\
+	highlight-selected\
+	intentions\
+	language-babel\
+	linter\
+	linter-ui-default minimap\
+	minimap\
+	pigments\
+	sort-lines\
+	split-diff\
+	svg-preview\
+	tree-view-copy-relative-path
+
 # Slack
 install_deb "Slack" "https://downloads.slack-edge.com/linux_releases/slack-desktop-2.7.1-amd64.deb"
 
